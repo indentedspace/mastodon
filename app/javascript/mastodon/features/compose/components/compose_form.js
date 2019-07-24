@@ -88,7 +88,7 @@ class ComposeForm extends ImmutablePureComponent {
     const { isSubmitting, isChangingUpload, isUploading, anyMedia } = this.props;
     const fulltext = [this.props.spoilerText, countableText(this.props.text)].join('');
 
-    if (isSubmitting || isUploading || isChangingUpload || length(fulltext) > 500 || (fulltext.length !== 0 && fulltext.trim().length === 0 && !anyMedia)) {
+    if (isSubmitting || isUploading || isChangingUpload || length(fulltext) > 1500 || (fulltext.length !== 0 && fulltext.trim().length === 0 && !anyMedia)) {
       return;
     }
 
