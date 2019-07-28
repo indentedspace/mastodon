@@ -63,6 +63,10 @@ class REST::InstanceSerializer < ActiveModel::Serializer
     Setting.registrations_mode == 'approved'
   end
 
+  def max_toot_chars
+    1500
+  end
+
   private
 
   def instance_presenter
