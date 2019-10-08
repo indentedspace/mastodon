@@ -906,6 +906,12 @@
   width: 100%;
   clear: both;
   border-bottom: 1px solid lighten($ui-base-color, 8%);
+  display: none;
+
+  span {
+    cursor: default;
+    user-select: none;
+  }
 }
 
 .status__prepend-icon-wrapper {
