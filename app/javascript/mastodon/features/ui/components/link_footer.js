@@ -62,7 +62,7 @@ class LinkFooter extends React.PureComponent {
           <FormattedMessage
             id='getting_started.open_source_notice'
             defaultMessage='Mastodon is open source software. You can contribute or report issues on GitHub at {github}.'
-            values={{ github: <span><a href={source_url} rel='noopener noreferrer' target='_blank'>{repository}</a> (v{version}.ac)</span> }}
+            values={{ github: <span><a href={source_url} rel='noopener noreferrer' target='_blank'>{repository}</a> (v{version} <a href="https://github.com/indentedspace/mastodon/tree/auspolcafe" rel='noopener noreferrer' target='_blank'>Custom</a>)</span> }}
           />
         </p>
       </div>
