@@ -5,7 +5,7 @@ class REST::InstanceSerializer < ActiveModel::Serializer
 
   attributes :uri, :title, :short_description, :description, :email,
              :version, :urls, :stats, :thumbnail,
-             :languages, :registrations, :approval_required, :max_toot_chars
+             :languages, :registrations, :approval_required, :invites_enabled, :max_toot_chars
 
   has_one :contact_account, serializer: REST::AccountSerializer
 
@@ -63,8 +63,13 @@ class REST::InstanceSerializer < ActiveModel::Serializer
     Setting.registrations_mode == 'approved'
   end
 
+<<<<<<< HEAD
   def max_toot_chars
     1500
+=======
+  def invites_enabled
+    Setting.min_invite_role == 'user'
+>>>>>>> v3.1.4
   end
 
   private
