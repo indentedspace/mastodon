@@ -63,13 +63,12 @@ class REST::InstanceSerializer < ActiveModel::Serializer
     Setting.registrations_mode == 'approved'
   end
 
-<<<<<<< HEAD
   def max_toot_chars
     1500
-=======
+  end
+  
   def invites_enabled
     Setting.min_invite_role == 'user'
->>>>>>> v3.1.4
   end
 
   private
